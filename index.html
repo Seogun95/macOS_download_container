@@ -3,89 +3,130 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/animations/shift-away.css"/>
         <title>Apple MacOS Download</title>
     </head>
     <body>
-        <div class="os-container">
-            <div class="left">
-                <div class="os-img-con">
-                    <img src="https://i.esdrop.com/d/f/YYnCCNI1Zm/u2gkozXDQv.jpg" />
-                </div>
-                <div class="os-description-con">
-                    <div class="text">
-                        <h2>Description</h2>
-                        <p>
-                            WWDC 2022에서 Apple은 macOS 13 Ventura를 발표했습니다. Intel에서 Apple의 자체 실리콘 칩으로의 전환이 이제 완료되고 M2 칩이 방금 나왔기 때문에 이 Mac용 새 운영 체제는 새
-                            장치로 제한됩니다. 많은 Mac을 지원했던 macOS Monterey와 달리 Apple은 이 목록을 줄였습니다. 예를 들어, 모두가 좋아하는 휴지통 Mac Pro는 macOS 13 Ventura를 지원하지 않습니다.
-                        </p>
-                        <p>
-                            인터페이스의 재설계 외에도 운영 체제의 편안한 사용, 게임 기능 및 브랜드 스마트폰과의 향상된 상호 작용을 목표로 하는 새로운 기능도 획득했습니다. 주요 시각적 혁신 중 하나는
-                            여러 장치와 작동하도록 설계된 Stage Manager 기능이었습니다. 동시에 응용 프로그램 창. 디스플레이 중앙에 활성 창을 배치하고 빠른 탐색을 위해 왼쪽에 배경 미리보기 아이콘을
-                            배치합니다. 여러 창을 동시에 열 때 그룹화 기능도 지원됩니다.
-                        </p>
+        <section>
+            <div class="os-container">
+                <div class="left">
+                    <div class="os-img-con">
+                        <img src="https://i.esdrop.com/d/f/YYnCCNI1Zm/u2gkozXDQv.jpg" />
                     </div>
-                    <div class="text2">
-                        Apple 서버에서 macOS 다운로드 <br /><br />"macadmin-scripts" 유틸리티 패키지의 "installmacos.py" 스크립트를 사용하여 Apple 서버에서 직접 macOS Ventura를 다운로드할 수 있습니다.
-                        <br /><br />github 페이지의 스크립트 문서에서 자세히 읽어보세요.<br /><br />https://github.com/munki/macadmin-scripts 또는 github의 사용자 scriptingosx에서 작은 응용 프로그램
-                        "DownloadFullInstaller" 사용:https://github.com/scriptingosx/DownloadFullInstaller/releases
-                    </div>
-                </div>
-            </div>
+                    <div class="os-description-con">
+                        <div class="text">
+                            <h2>Description</h2>
+                            <p>
+                                WWDC 2022에서 Apple은 macOS 13 Ventura를 발표했습니다. Intel에서 Apple의 자체 실리콘 칩으로의 전환이 이제 완료되고 M2 칩이 방금 나왔기 때문에 이 Mac용 새 운영 체제는 새
+                                장치로 제한됩니다. 많은 Mac을 지원했던 macOS Monterey와 달리 Apple은 이 목록을 줄였습니다. 예를 들어, 모두가 좋아하는 휴지통 Mac Pro는 macOS 13 Ventura를 지원하지
+                                않습니다.
+                            </p>
+                            <p>
+                                인터페이스의 재설계 외에도 운영 체제의 편안한 사용, 게임 기능 및 브랜드 스마트폰과의 향상된 상호 작용을 목표로 하는 새로운 기능도 획득했습니다. 주요 시각적 혁신 중
+                                하나는 여러 장치와 작동하도록 설계된 Stage Manager 기능이었습니다. 동시에 응용 프로그램 창. 디스플레이 중앙에 활성 창을 배치하고 빠른 탐색을 위해 왼쪽에 배경 미리 보기
+                                아이콘을 배치합니다. 여러 창을 동시에 열 때 그룹화 기능도 지원됩니다.
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="text2">
+                            <p>
+                                Apple 서버에서 macOS 다운로드 <br /><br />"macadmin-scripts" 유틸리티 패키지의 "installmacos.py" 스크립트를 사용하여 Apple 서버에서 직접 macOS Ventura를 다운로드할 수
+                                있습니다. github 페이지의 스크립트 문서에서 자세히 읽어보세요.<br /><br /><a href="https://github.com/munki/macadmin-scripts" target="_blank" rel="noopener noreferrer">https://github.com/munki/macadmin-scripts</a>
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="wayToDownload">
+                            <h2>다운로드 방법</h2>
+                            <p>
+                                <ol>
 
-            <div class="right">
-                <div class="info">
-                    <div class="info-main">
-                        <img src="https://i.esdrop.com/d/f/YYnCCNI1Zm/IW1TclSV0L.png" width="64" height="64" alt="os 이미지" />
-                        <div class="info-main-d">
-                            <span class="title"> macOS Ventura </span>
-                            <span class="title2 gray">운영 체제</span>
+                                <li>오른쪽 다운로드 버튼을 눌러 Apple 웹 사이트로 이동합니다.</li>
+                                <li>Apple 웹 사이트에서 계정이 있다면 '로그인'을, 계정이 없다면 '회원가입'을 해줍니다.</li>
+                                <li>로그인 후 나타나는 페이지에서 '시작하기' ➜ Mac을 등록을 눌러줍니다.</li>
+                                <li>'공개 베타 가이드'에 나와있는 순서대로 진행하여 MacOS를 설치해주면 끝입니다.</li>
+                            </ol>
+                                <img src="https://i.esdrop.com/d/f/YYnCCNI1Zm/iTUEZA2NbD.jpg" alt="다운로드 방법" />
+                            </p>
+
+                            <p>
+                                <img src="https://i.esdrop.com/d/f/YYnCCNI1Zm/OA9yKpMswW.jpg" alt="다운로드 방법" />
+                            </p>
+
+                            <p>
+                                <img src="https://i.esdrop.com/d/f/YYnCCNI1Zm/7uHqmRyGom.jpg" alt="다운로드 방법" />
+                            </p>
                         </div>
                     </div>
-                    <hr />
-                    <div class="info-block">
-                        <span class="title2 gray"> 버전 </span>
-                        <span class="title2"> 13.0(22A5331f) 베타 6</span>
-                    </div>
+                </div>
 
-                    <div class="info-block">
-                        <span class="title2 gray"> 개발자 </span>
-                        <span class="title2"> APPLE</span>
-                    </div>
+                <div class="right">
+                    <div class="info">
+                        <div class="info-main">
+                            <img src="https://i.esdrop.com/d/f/YYnCCNI1Zm/IW1TclSV0L.png" width="64" height="64" alt="os 이미지" />
+                            <div class="info-main-d">
+                                <span class="title"> macOS Ventura </span>
+                                <span class="title2 gray">운영 체제</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="info-block">
+                            <span class="title2 gray"> 버전 </span>
+                            <span class="title2"> 13.0(22A5331f) 베타 6</span>
+                        </div>
 
-                    <div class="info-block">
-                        <span class="title2 gray"> 언어 </span>
-                        <span class="title2"> 영어, 한국어, 일본어, 중국어, 러시아어...</span>
-                    </div>
+                        <div class="info-block">
+                            <span class="title2 gray"> 개발자 </span>
+                            <span class="title2"> APPLE</span>
+                        </div>
 
-                    <div class="info-block">
-                        <span class="title2 gray"> 지원 기기 목록 </span>
-                        <span class="title2">
-                            iMac 2017 or later , iMac Pro 2017 or later , MacBook Air 2018 or later , MacBook Pro 2017 or later , Mac Pro 2019 or later , Mac Studio 2022 or later , Mac mini 2018 or
-                            later , MacBook 2017 or later
-                        </span>
-                    </div>
+                        <div class="info-block">
+                            <span class="title2 gray"> 언어 </span>
+                            <span class="title2 lang"> 한국어, 영어 , 아랍어 , 헝가리어 , 베트남어 , 네덜란드어 , 그리스어 , 덴마크어 , 히브리어 , 인도네시아어 , 스페인어 , 이탈리아어 , 카탈로니아어 , 러시아어 , 말레이어 , 독일어 , 노르웨이어 , 폴란드어 , 포르투갈어 , 루마니아어 , 슬로바키아어 , 태국어 , 터키어 , 우크라이나어, 중국어 번체 , 중국어 간체 , 핀란드어 , 프랑스어 , 힌디어 , 크로아티아어 , 체코어 , 스웨덴어 , 일본어</span>
+                        </div>
 
-                    <div class="info-block">
-                        <span class="title2 gray"> 앱 크기 </span>
-                        <span class="title2"> 11.3 GB</span>
-                    </div>
-                    <hr />
-                    <div class="info-block url">
-                        <span class="title2 gray"> 링크 </span>
-                        <span class="links">
-                            <p><a href="https://www.apple.com/kr/macos/macos-ventura-preview/" target="_blank" rel="noopener noreferrer">공식 웹 사이트</a></p>
-                            <p><a href="https://www.apple.com/kr/macos/macos-ventura-preview/features/" target="_blank" rel="noopener noreferrer">새로운 기능</a></p>
-                            <p><a href="https://developer.apple.com/documentation/macos-release-notes/macos-13-release-notes" target="_blank" rel="noopener noreferrer">릴리즈 노트</a></p>
-                        </span>
-                    </div>
+                        <div class="info-block">
+                            <span class="title2 gray"> 지원 기기 목록 </span>
+                            <span class="title2">
+                                iMac 2017 or later , iMac Pro 2017 or later , MacBook Air 2018 or later , MacBook Pro 2017 or later , Mac Pro 2019 or later , Mac Studio 2022 or later , Mac mini 2018
+                                or later , MacBook 2017 or later
+                            </span>
+                        </div>
 
-                    <div class="info-block">
-                        <a href="https://beta.apple.com/sp/betaprogram/welcome?locale=ko" target="_blank" rel="noopener noreferrer">
-                            <button>다운로드</button>
-                        </a>
+                        <div class="info-block">
+                            <span class="title2 gray"> 앱 크기 </span>
+                            <span class="title2"> 11.3 GB</span>
+                        </div>
+                        <hr />
+                        <div class="info-block url">
+                            <span class="title2 gray"> 링크 </span>
+                            <span class="links">
+                                <p><a href="https://www.apple.com/kr/macos/macos-ventura-preview/" target="_blank" rel="noopener noreferrer">공식 웹 사이트</a></p>
+                                <p><a href="https://www.apple.com/kr/macos/macos-ventura-preview/features/" target="_blank" rel="noopener noreferrer">새로운 기능</a></p>
+                                <p><a href="https://developer.apple.com/documentation/macos-release-notes/macos-13-release-notes" target="_blank" rel="noopener noreferrer">릴리즈 노트</a></p>
+                            </span>
+                        </div>
+
+                        <div class="info-block btn">
+                            <a href="https://beta.apple.com/sp/betaprogram/welcome?locale=ko" target="_blank" rel="noopener noreferrer">
+                                <button class="downloadBtn">다운로드</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+        </section>    
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="tippy.custom.js"></script>
+        <script>
+            tippy('.downloadBtn', {
+                content: '다운로드 방법 필독',
+                theme: 'seogun',
+                arrow: true,
+                placement: 'top',
+                arrowType: 'round',
+                duration: 250,
+                animation: 'shift-away',
+            });
+        </script>
     </body>
 </html>
